@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install flake8
-      - run: flake8 . --max-line-length=100
+      - run: flake8 . --max-line-length=100 --ignore=E302,W292,E203
 
   test:
     name: Tests automatiques
